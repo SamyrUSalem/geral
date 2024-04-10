@@ -21,7 +21,6 @@
 --------------------------------------------------------------*/
 body {
   font-family: var(--font-default);
-  color: var(--color-default);
   overflow-x: hidden;
 }
 
@@ -33,6 +32,29 @@ a {
 a:hover {
   color: #ffc732;
   text-decoration: none;
+}
+
+.white-button a {
+  display: inline-block !important;
+  padding: 7px 10px !important;
+  color: #4b8ef1 !important;
+  text-transform: capitalize;
+  font-size: 15px;
+  background-color: #fff;
+  border-radius: 23px;
+  font-weight: 500 !important;
+  letter-spacing: 0.3px !important;
+  transition: all .5s;
+}
+
+.white-button a i {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.white-button a:hover {
+  background-color: #4b8ef1;
+  color: #fff !important;
 }
 
 h1,
@@ -603,13 +625,14 @@ Banner Style
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 100%;
+  width: 32%;
   height: 100%;
   z-index: 1;
 }
 
 .main-banner .left-content {
   margin-right: 15px;
+  position: relative;
 }
 
 .main-banner .left-content h2 {
@@ -618,13 +641,18 @@ Banner Style
   font-weight: 700;
   line-height: 70px;
   font-size: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 200px;
 }
 
 .main-banner .left-content p {
   margin-bottom: 45px;
+  margin-top: 20px;
   color: #2a2a2a;
   font-weight: 400;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  z-index: 2;
 }
 
 .main-banner .left-content .first-button {
@@ -633,6 +661,8 @@ Banner Style
 
 .main-banner .left-content .white-button {
   display: inline-block;
+  position: absolute;
+  top: 15rem;
 }
 
 .main-banner .right-image {
@@ -642,12 +672,13 @@ Banner Style
 }
 
 .main-banner .right-image img {
-  max-width: 710px;
+  max-width: 480px;
 }
 
 .main-banner .left-content .white-button a {
   background-color: #4b8ef1;
   color: #fff !important;
+  cursor: pointer;
 }
 
 /* 
@@ -786,34 +817,7 @@ Banner Style
   }
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-.header {
-  z-index: 997;
-  position: absolute;
-  padding: 30px 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 
-.header .logo img {
-  max-height: 40px;
-  margin-right: 6px;
-}
-
-.header .logo h1 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 0;
-  font-family: var(--font-primary);
-}
-
-.header .logo h1 span {
-  color: var(--color-primary);
-}
 
 /*--------------------------------------------------------------
 # Desktop Navigation
@@ -3101,7 +3105,8 @@ Banner Style
 # Footer
 --------------------------------------------------------------*/
 
-ul, li {
+ul,
+li {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -3203,7 +3208,8 @@ footer #search button:hover {
 .footer-widget ul li a {
   font-size: 15px;
   color: #fff;
-  transition: all .3s;;
+  transition: all .3s;
+  ;
 }
 
 .footer-widget a:hover {
