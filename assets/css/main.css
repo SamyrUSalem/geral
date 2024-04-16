@@ -1201,8 +1201,8 @@ Services Style
 
 .services .section-heading p {
   margin-top: 10px;
-  margin-left: 18%;
-  margin-right: 18%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .services .container-fluid {
@@ -1211,7 +1211,7 @@ Services Style
 }
 
 .services:after {
-  content: '';
+  content: "";
   background-image: url(../images/services-left-dec.png);
   background-repeat: no-repeat;
   position: absolute;
@@ -1223,7 +1223,7 @@ Services Style
 }
 
 .services:before {
-  content: '';
+  content: "";
   background-image: url(../images/services-right-dec.png);
   background-repeat: no-repeat;
   position: absolute;
@@ -1237,6 +1237,7 @@ Services Style
 .services .section-heading {
   text-align: center;
   margin-bottom: 80px;
+  margin-top: 5px;
 }
 
 .services .section-heading .line-dec {
@@ -1251,7 +1252,8 @@ Services Style
   background-color: #fff;
   border-radius: 10px;
   border-top-right-radius: 50px;
-  transition: all .3s;
+  transition: all 0.3s;
+  margin-bottom: 20px;
 }
 
 .service-item .icon {
@@ -1260,18 +1262,18 @@ Services Style
   background-repeat: no-repeat;
   width: 50px;
   height: 50px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .service-item h4 {
-  transition: all .3s;
+  transition: all 0.3s;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
 .service-item p {
-  transition: all .3s;
+  transition: all 0.3s;
   font-size: 15px;
   margin-bottom: 20px;
 }
@@ -1283,36 +1285,67 @@ Services Style
 }
 
 .first-service .icon {
-  background-image: url(../images/service-icon-01.png);
+  background-image: url(../images/icon-service-balde-01.png);
 }
 
 .first-service:hover .icon {
-  background-image: url(../images/service-icon-hover-01.png);
+  background-image: url(../images/icon-service-balde-hover-01.png);
 }
 
 .second-service .icon {
-  background-image: url(../images/service-icon-02.png);
+  background-image: url(../images/ìcon-service-predio-02.png);
 }
 
 .second-service:hover .icon {
-  background-image: url(../images/service-icon-hover-02.png);
+  background-image: url(../images/icon-service-predio-hover-02.png);
 }
 
-
 .third-service .icon {
-  background-image: url(../images/service-icon-03.png);
+  background-image: url(../images/icon-service-ar-03.png);
 }
 
 .third-service:hover .icon {
-  background-image: url(../images/service-icon-hover-03.png);
+  background-image: url(../images/icon-service-ar-hover-03.png);
 }
 
 .fourth-service .icon {
-  background-image: url(../images/service-icon-04.png);
+  background-image: url(../images/icon-service-sanitizacao-04.png);
 }
 
 .fourth-service:hover .icon {
-  background-image: url(../images/service-icon-hover-04.png);
+  background-image: url(../images/icon-service-sanitizacao-hover-04.png);
+}
+
+.fifth-service .icon {
+  background-image: url(../images/icon-service-contrato-05.png);
+}
+
+.fifth-service:hover .icon {
+  background-image: url(../images/icon-service-contrato-hover-05.png);
+}
+
+.sixth-service .icon {
+  background-image: url(../images/icon-service-tecnica-06.png);
+}
+
+.sixth-service:hover .icon {
+  background-image: url(../images/icon-service-tecnica-hover-06.png);
+}
+
+.seventh-service .icon {
+  background-image: url(../images/icon-service-agua-07.png);
+}
+
+.seventh-service:hover .icon {
+  background-image: url(../images/icon-service-agua-hover-07.png);
+}
+
+.eighth-service .icon {
+  background-image: url(../images/icon-service-residencial-08.png);
+}
+
+.eighth-service:hover .icon {
+  background-image: url(../images/icon-service-residencial-hover-08.png);
 }
 
 .service-item:hover {
@@ -1321,7 +1354,6 @@ Services Style
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 
 /*
