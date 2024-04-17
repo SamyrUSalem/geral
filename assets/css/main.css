@@ -1605,176 +1605,157 @@ The Clients
 
 /* 
 ---------------------------------------------
-The Clients
+Contact
 ---------------------------------------------
 */
-
-.pricing-tables {
-  padding-top: 130px;
-}
-
-.pricing-tables .section-heading {
+.contact .info-box {
+  color: #444444;
   text-align: center;
-  margin-bottom: 80px;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
 }
 
-.pricing-tables .section-heading p {
-  margin-top: 10px;
-  margin-left: 18%;
-  margin-right: 18%;
+.contact .info-box i.bx {
+  font-size: 24px;
+  color: #7b9fd4;
+  border-radius: 50%;
+  padding: 15px;
+  background: #e1e4e6;
 }
 
-.pricing-item-regular {
-  margin-top: 30px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
-  border-radius: 50px;
-  padding: 90px 30px;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.pricing-item-regular:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(../images/regular-table-top.png);
-  z-index: 0;
-  content: '';
-  width: 274px;
-  height: 221px;
-}
-
-.pricing-item-regular:after {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-image: url(../images/regular-table-bottom.png);
-  z-index: 0;
-  content: '';
-  width: 370px;
-  height: 171px;
-}
-
-.pricing-item-regular span.price {
-  font-size: 40px;
-  color: #fff;
-  position: absolute;
-  font-weight: 700;
-  z-index: 1;
-  left: 30px;
-  top: 30px;
-}
-
-.pricing-item-regular h4 {
+.contact .info-box h3 {
   font-size: 20px;
+  color: #777777;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin: 10px 0;
 }
 
-.pricing-item-regular .icon img {
-  width: 120px;
-  height: 106px;
-  margin-bottom: 30px;
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
 }
 
-.pricing-item-regular ul li {
-  color: #4b8ef1;
-  font-size: 15px;
-  margin-bottom: 15px;
+.contact .social-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
 }
 
-.pricing-item-regular ul li:last-child {
-  margin-bottom: 0px;
-}
-
-.pricing-item-regular ul li.non-function {
-  color: #afafaf;
-  text-decoration: line-through;
-}
-
-.pricing-item-regular .border-button {
-  position: relative;
-  z-index: 1;
-  margin-top: 40px;
-}
-
-.pricing-item-pro {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+.contact .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  color: #687683;
+  line-height: 1;
+  margin: 0 8px;
+  transition: 0.3s;
+  padding: 14px;
   border-radius: 50px;
-  padding: 120px 30px;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
+  border: 1px solid #dde1e4;
 }
 
-.pricing-item-pro:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(../images/pro-table-top.png);
-  z-index: 0;
-  content: '';
-  width: 281px;
-  height: 251px;
-}
-
-.pricing-item-pro:after {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../images/pro-table-bottom.png);
-  z-index: 0;
-  content: '';
-  width: 100%;
-  height: 201px;
-}
-
-.pricing-item-pro span.price {
-  font-size: 40px;
+.contact .social-links a:hover {
   color: #fff;
-  position: absolute;
-  font-weight: 700;
-  z-index: 1;
-  left: 30px;
-  top: 30px;
+  border-color: #4b8ef1;
+  background: #4b8ef1;
 }
 
-.pricing-item-pro h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 30px;
+.contact .php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 27px;
 }
 
-.pricing-item-pro .icon img {
-  width: 120px;
-  height: 106px;
-  margin-bottom: 30px;
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
 }
 
-.pricing-item-pro ul li {
-  color: #4b8ef1;
-  font-size: 15px;
-  margin-bottom: 15px;
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
 }
 
-.pricing-item-pro ul li:last-child {
-  margin-bottom: 0px;
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
 }
 
-.pricing-item-pro ul li.non-function {
-  color: #afafaf;
-  text-decoration: line-through;
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
 }
 
-.pricing-item-pro .border-button {
-  position: relative;
-  z-index: 1;
-  margin-top: 40px;
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input::focus,
+.contact .php-email-form textarea::focus {
+  background-color: #ffb727;
+}
+
+.contact .php-email-form input {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #4b8ef1;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #ffc85a;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
