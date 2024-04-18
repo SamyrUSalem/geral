@@ -1061,8 +1061,8 @@ Banner Style
 }
 
 .main-banner .right-image img {
-  min-width: 700px;
-  max-height: 700px;
+  width: 700px;
+  height: 500px;
   border-radius: 60px;
  
 }
