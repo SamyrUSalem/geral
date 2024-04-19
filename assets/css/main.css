@@ -238,7 +238,8 @@ body {
 }
 
 .section-heading h4 {
-  color: #2a2a2a;  /* titulos */
+  color: #2a2a2a;
+  /* titulos */
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -1026,7 +1027,7 @@ Banner Style
 .svg {
   @supports (background-clip: text) or (-webkit-background-clip: text) {
     background-image:
-      url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%2300A080' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%2300FDCF'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%2300FDCF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%23008060'/%3E%3C/g%3E%3C/svg%3E%0A");
+      url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%23003399' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%230055CC'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%230077FF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%230099FF'/%3E%3C/g%3E%3C/svg%3E%0A");
     background-size: 110% auto;
     background-position: center;
     color: transparent;
@@ -1064,7 +1065,7 @@ Banner Style
   width: 700px;
   height: 500px;
   border-radius: 60px;
- 
+
 }
 
 .main-banner .left-content .white-button a {
@@ -1619,7 +1620,7 @@ Contact
   color: #fff;
   border-color: #4b8ef1;
   background: #4b8ef1;
-  
+
 }
 
 .contact .php-email-form {
@@ -2567,61 +2568,59 @@ responsive
 }
 
 
- /*--------------------------------------------------------------
+/*--------------------------------------------------------------
   # Clients
   --------------------------------------------------------------*/
- 
-  .client-slider {
-    padding-top: 100px;
-  }
-  
-  .client-slider .section-heading {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .client-slider .section-heading p {
-    margin-top: 10px;
-    /* Alterei para usar porcentagens relativas ao elemento pai */
-    margin-left: auto;
-    margin-right: auto;
-    /* Adicionei um limite máximo para a largura do texto */
-    max-width: 800px;
-  }
-  
-  section {
-    padding: 60px 0;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .clients .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-  }
-  
-  .clients .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: rgba(33, 37, 41, 0.15);
-    opacity: 1;
-    
-  }
-  
-  .clients .swiper-pagination .swiper-pagination-bullet-active {
-    margin-top: 50px;
-    background-color: #4b8ef1;
-  }
-  
-  .clients .swiper-slide img {
-    opacity: 0.5;
-    transition: 0.3s;
-    filter: grayscale(100);
-  }
-  
-  .clients .swiper-slide img:hover {
-    opacity: 1;
-    filter: none;
-  }
-  
-  
+
+.client-slider {
+  padding-top: 100px;
+}
+
+.client-slider .section-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.client-slider .section-heading p {
+  margin-top: 10px;
+  /* Alterei para usar porcentagens relativas ao elemento pai */
+  margin-left: auto;
+  margin-right: auto;
+  /* Adicionei um limite máximo para a largura do texto */
+  max-width: 800px;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(33, 37, 41, 0.15);
+  opacity: 1;
+
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  margin-top: 50px;
+  background-color: #4b8ef1;
+}
+
+.clients .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+  filter: grayscale(100);
+}
+
+.clients .swiper-slide img:hover {
+  opacity: 1;
+  filter: none;
+}
