@@ -77,6 +77,8 @@ figcaption {
   --heading-color: #32353a;
   --heading-color-rgb: 50, 53, 58;
   --contrast-color: #ffffff;
+  --color-primary: #feb900;
+  --color-secondary: #52565e;
   --contrast-color-rgb: 255, 255, 255;
   --font-family-poppins: 'Poppins', sans-serif;
   --font-family-inter: 'Inter', sans-serif;
@@ -1096,6 +1098,30 @@ About Us Style
   border-radius: 50px;
 }
 
+.about:after {
+  content: "";
+  background-image: url(../images/services-left-dec.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: -300px;
+  width: 261px;
+  height: 368px;
+  z-index: 0;
+}
+
+.about:before {
+  content: "";
+  background-image: url(../images/services-right-dec.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1136px;
+  height: 244px;
+  z-index: 0;
+}
+
 .about .box-heading h3 {
   font-size: 28px;
   font-weight: 700;
@@ -1248,7 +1274,7 @@ Services Style
 */
 
 .services {
-  padding-top: 130px;
+  padding-top: 50px;
   position: relative;
 }
 
@@ -1262,7 +1288,6 @@ Services Style
   padding-left: 65px;
   padding-right: 65px;
 }
-
 
 .services .section-heading {
   text-align: center;
@@ -1384,6 +1409,97 @@ Services Style
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+.features .nav-tabs {
+  border: 0;
+}
+
+.features .nav-link {
+  padding: 15px 0;
+  transition: 0.3s;
+  color: var(--color-secondary);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 100%;
+  border: 0;
+  border-bottom: 4px solid #e2e4e6;
+}
+
+.features .nav-link i {
+  padding-right: 15px;
+  font-size: 48px;
+}
+
+.features .nav-link h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 575px) {
+  .features .nav-link h4 {
+    font-size: 16px;
+  }
+}
+
+.features .nav-link:hover {
+  color: var(--accent-color);
+}
+
+.features .nav-link.active {
+  color: var(--accent-color);
+  background-color: transparent;
+  border-color: var(--accent-color);
+}
+
+.features .tab-content {
+  margin-top: 30px;
+}
+
+.features .tab-pane h3 {
+  font-weight: 700;
+  font-size: 32px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.features .tab-pane h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  bottom: 0;
+}
+
+.features .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features .tab-pane ul li {
+  padding-top: 10px;
+}
+
+.features .tab-pane ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: var(--accent-color);
+}
+
+.features .tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
 
 
 /*--------------------------------------------------------------
