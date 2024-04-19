@@ -28,4 +28,18 @@
 @media only screen and (min-width: 992px) {}
 
 /* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+
+    .about:after {
+        display: none;
+
+    }
+
+    .about:before {
+        display: none;
+    }
+
+    #style {
+        color: white;
+    }
+}
