@@ -1014,7 +1014,10 @@ Banner Style
 }
 
 #style {
-  color: #ffff;
+  background-image: linear-gradient(to right, #003399, #0055CC, #0077FF, #0099FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-size: 30px;
   text-transform: uppercase;
   text-align: center;
