@@ -34,9 +34,7 @@
         display: none;
     }
 
-    #style {
-        color: white;
-    }
+    #style {}
 
     .main-banner .right-image img {
         width: 500px;
@@ -46,8 +44,13 @@
     .about .video-box {
         margin-top: 50px;
         min-height: 500px;
+        border-radius: 20px;
+    }
+
+    #clients {
+        margin-bottom: 100px;
     }
 }
 
 /* Estilos para monitores ultrawide de 34 polegadas */
-@media screen and (min-device-width: 3440px) and (min-device-height: 1440px) {}
+@media screen and (min-width: 3440px) {}

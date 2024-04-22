@@ -1016,7 +1016,7 @@ Banner Style
 }
 
 #style {
-  background-image: linear-gradient(to right, #003399, #0055CC, #0077FF, #0099FF);
+  background-image: linear-gradient(to right, #003399, #0055CC, #0077FF, #55afeb);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
