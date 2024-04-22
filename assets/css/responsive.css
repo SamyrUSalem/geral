@@ -19,6 +19,36 @@
 /*Dispostivos Médios (Tablets deitados, 768px para cima) */
 @media only screen and (min-width: 768px) {}
 
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+
+    /* Remova as regras que deseja substituir e adicione as novas regras aqui */
+    .about:after {
+        display: none;
+    }
+
+    .about:before {
+        display: none;
+    }
+
+    #style {}
+
+    .main-banner .right-image img {
+        min-width: 500px;
+        margin-left: 100px;
+    }
+
+    .about .video-box {
+        margin-top: 50px;
+        min-height: 500px;
+        border-radius: 20px;
+    }
+
+    #clients {
+        margin-bottom: 100px;
+    }
+}
+
 /* Dispostivos Largos (laptops/desktops, 992px para cima) */
 @media only screen and (min-width: 992px) {
     .about:after {
@@ -30,7 +60,6 @@
     }
 
     .main-banner .right-image img {
-        width: 500px;
         height: 300px;
         border-radius: 60px;
     }
@@ -146,35 +175,6 @@
     }
 }
 
-/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
-@media only screen and (min-width: 1200px) {
-
-    /* Remova as regras que deseja substituir e adicione as novas regras aqui */
-    .about:after {
-        display: none;
-    }
-
-    .about:before {
-        display: none;
-    }
-
-    #style {}
-
-    .main-banner .right-image img {
-        width: 500px;
-        margin-left: 100px;
-    }
-
-    .about .video-box {
-        margin-top: 50px;
-        min-height: 500px;
-        border-radius: 20px;
-    }
-
-    #clients {
-        margin-bottom: 100px;
-    }
-}
 
 /* Estilos para monitores ultrawide de 34 polegadas */
 @media screen and (min-width: 3440px) {}

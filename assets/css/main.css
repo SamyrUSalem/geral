@@ -1185,15 +1185,10 @@ About Us Style
   background: url("../images/about.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
-<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-=======
-  margin-bottom: 20px;
-  border-radius: 25px;
->>>>>>> remotes/origin/oliveira
 }
 
 .about .play-btn {
