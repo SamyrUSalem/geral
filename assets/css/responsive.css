@@ -21,7 +21,6 @@
 
 /* Dispostivos Largos (laptops/desktops, 992px para cima) */
 @media only screen and (min-width: 992px) {
-
     .about:after {
         display: none;
     }
@@ -145,15 +144,14 @@
         font-weight: 700;
         margin-top: 15px;
     }
-
 }
 
 /* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
 @media only screen and (min-width: 1200px) {
 
+    /* Remova as regras que deseja substituir e adicione as novas regras aqui */
     .about:after {
         display: none;
-
     }
 
     .about:before {
