@@ -1185,10 +1185,15 @@ About Us Style
   background: url("../images/about.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+=======
+  margin-bottom: 20px;
+  border-radius: 25px;
+>>>>>>> remotes/origin/oliveira
 }
 
 .about .play-btn {
@@ -1421,6 +1426,7 @@ Services Style
 --------------------------------------------------------------*/
 .features .nav-tabs {
   border: 0;
+  margin-top: 50px;
 }
 
 .features .nav-link {
@@ -2397,7 +2403,7 @@ responsive
   }
 
   .main-banner .left-content p {
-    color: #afafaf;
+    color: #666666;
     margin-right: 0;
   }
 

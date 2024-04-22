@@ -20,7 +20,123 @@
 @media only screen and (min-width: 768px) {}
 
 /* Dispostivos Largos (laptops/desktops, 992px para cima) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+
+    .about:after {
+        display: none;
+    }
+    
+    .about:before {
+        display: none;
+    }
+
+    .main-banner .right-image img {
+        width: 500px;
+        height: 300px;
+        border-radius: 60px;
+    }
+      
+    .about .video-box {
+        position: relative; /* Adiciona position relative para que o botão seja posicionado em relação a este elemento */
+        margin-top: 50px;
+        background: url("../images/about.jpg") center center no-repeat;
+        background-size: cover;
+        width: 480px;
+        height: 450px; /* Ajuste a altura conforme necessário */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .about .play-btn {
+        width: 94px;
+        height: 94px;
+        background: radial-gradient(#4b8ef1 50%, rgba(46, 103, 179, 0.4) 52%);
+        border-radius: 50%;
+        display: flex; /* Altera para flex para alinhar o conteúdo verticalmente */
+        align-items: center; /* Alinha verticalmente */
+        justify-content: center; /* Alinha horizontalmente */
+        position: absolute;
+        top: 50%; /* Alinha verticalmente no meio */
+        left: 50%; /* Alinha horizontalmente no meio */
+        transform: translate(-50%, -50%); /* Centraliza completamente */
+        overflow: hidden;
+      }
+
+      .about .box-heading h4 {
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        padding: 8px 20px;
+        margin: 0 0 15px 0;
+        background: #f3f8ec;
+        background-color: #34c4f9;
+        color: white;
+        display: inline-block;
+        text-transform: uppercase;
+        border-radius: 50px;
+        margin-top: 20px;
+      }
+
+      .about{
+        margin-bottom: 50px;
+      }
+
+      .about .icon-box{
+        margin-top: 50px;
+      }
+
+      .about-us, #text-left{
+        text-align: left;
+      }
+
+      .service-item h4 {
+        transition: all 0.3s;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        text-align: left;
+      }
+
+      .service-item p {
+        transition: all 0.3s;
+        font-size: 15px;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+      .clients .swiper-pagination {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        position: relative;
+      }
+
+      section, .features .nav-tabs {
+        border: 0;
+        margin-top: 50px;
+        margin-bottom: 10px;
+      }
+
+      .testimonials {
+        --background-color: #f4f4f4; 
+        margin-bottom: 10px;
+        z-index: 10;
+      }
+
+        footer {
+        margin-top: 20px;
+        padding-top: 250px;
+        padding-bottom: 10px;
+      }
+
+      .footer-widget h4 {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        margin-top: 15px;
+      }
+
+}
 
 /* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
 @media only screen and (min-width: 1200px) {
