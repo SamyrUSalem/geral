@@ -71,6 +71,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 20px;
     }
 
     .about .play-btn {
@@ -154,12 +155,6 @@
         --background-color: #f4f4f4;
         margin-bottom: 10px;
         z-index: 10;
-    }
-
-    footer {
-        margin-top: 20px;
-        padding-top: 250px;
-        padding-bottom: 10px;
     }
 
     .footer-widget h4 {
