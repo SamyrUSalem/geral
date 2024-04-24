@@ -8,12 +8,16 @@
     .about.services .container .row div {
         margin-bottom: 15px;
     }
+
+    .main-banner .right-image img {
+        display: none;
+      }
 }
 
 
 
 /* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 991px) {
     
     .service-item {
         min-height: 520px;
@@ -28,6 +32,37 @@
     footer {
         margin-top: 0px;
         padding-top: 350px;
+      }
+
+      .main-banner .right-image img {
+        display: none;
+      }
+
+      #style {
+        background-image: linear-gradient(to right, #003399, #0055CC, #0077FF, #55afeb);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1;
+        font-weight: 900;
+        font-family: var(--font-family-poppins);
+        margin-bottom: 15px;
+      }
+      
+      .svg {
+        @supports (background-clip: text) or (-webkit-background-clip: text) {
+          background-image:
+            url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%23003399' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%230055CC'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%230077FF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%230099FF'/%3E%3C/g%3E%3C/svg%3E%0A");
+          background-size: 110% auto;
+          background-position: center;
+          color: transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+          display: block;
+        }
       }
 }
 
@@ -184,6 +219,38 @@
         font-weight: 700;
         margin-top: 15px;
     }
+
+    #style {
+        background-image: linear-gradient(to right, #666666, #666666, #666666, #666666);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1;
+        font-weight: 900;
+        font-family: var(--font-family-poppins);
+        margin-bottom: 15px;
+      }
+      
+      .svg {
+        @supports (background-clip: text) or (-webkit-background-clip: text) {
+          background-size: 110% auto;
+          background-position: center;
+          color: transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+          display: block;
+        }
+      }
+
+      .main-banner .left-content p {
+        margin-bottom: 45px;
+        color: #ffffff;
+        font-weight: 400;
+      }
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -197,6 +264,12 @@
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1555px) {
+    .main-banner .right-image img {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1513px){
     .main-banner .right-image img {
         max-width: 500px;
     }

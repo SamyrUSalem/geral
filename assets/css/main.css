@@ -1016,7 +1016,7 @@ Banner Style
   margin-bottom: 5px;
 }
 
-#style {
+/* #style {
   background-image: linear-gradient(to right, #003399, #0055CC, #0077FF, #55afeb);
   -webkit-background-clip: text;
   background-clip: text;
@@ -1041,17 +1041,17 @@ Banner Style
     background-clip: text;
     display: block;
   }
-}
+} */
 
 .main-banner .left-content h4 {
   font-style: italic;
 }
 
-.main-banner .left-content p {
+/* .main-banner .left-content p {
   margin-bottom: 45px;
   color: #2a2a2a;
   font-weight: 400;
-}
+} */
 
 .main-banner .left-content .first-button {
   margin-right: 15px;
