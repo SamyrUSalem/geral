@@ -57,10 +57,6 @@
         border-radius: 20px;
     }
 
-    #clients {
-        margin-bottom: 100px;
-    }
-
     .service-item {
         min-height: 500px;
         padding: 20px;
@@ -129,10 +125,6 @@
         text-transform: uppercase;
         border-radius: 50px;
         margin-top: 20px;
-    }
-
-    .about {
-        margin-bottom: 50px;
     }
 
     .about .icon-box {
