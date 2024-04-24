@@ -145,7 +145,8 @@
     $('.nav a').each(function () {
       var currLink = $(this);
       var refElement = $(currLink.attr("href"));
-      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+      if (refElement.position().top <= scrollPos + $(window).height() / 7 &&
+        refElement.position().top + refElement.height() >= scrollPos + $(window).height() / 2) {
         $('.nav ul li a').removeClass("active");
         currLink.addClass("active");
       }

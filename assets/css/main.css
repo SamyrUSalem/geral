@@ -67,6 +67,10 @@ figcaption {
   outline: 0;
 }
 
+m {
+  margin-top: 40px;
+}
+
 :root {
   --background-color: #ffffff;
   --background-color-rgb: 255, 255, 255;
@@ -454,8 +458,8 @@ header
 }
 
 .header-area .main-nav .nav li:nth-child(6) {
-  padding-right: 0px;
-  padding-left: 40px;
+  padding-right: 20px;
+  padding-left: 0px;
 }
 
 .header-area .main-nav .nav li:last-child a,
@@ -1256,7 +1260,6 @@ Services Style
 */
 
 .services {
-  padding-top: 50px;
   position: relative;
 }
 
@@ -1295,7 +1298,8 @@ Services Style
   flex-direction: column;
   justify-content: space-between;
   min-height: 500px;
-  padding: 20px; /* Adicione padding para melhor visualização */
+  padding: 20px;
+  /* Adicione padding para melhor visualização */
 }
 
 .service-item .icon {
@@ -2698,7 +2702,7 @@ responsive
 }
 
 section {
-  padding: 60px 0;
+  padding: 0px 0;
   overflow: hidden;
   position: relative;
 }
