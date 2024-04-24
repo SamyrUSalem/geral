@@ -1819,7 +1819,7 @@ Contact
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ffc85a;
+  background: rgb(47, 71, 175);
 }
 
 @keyframes animate-loading {
