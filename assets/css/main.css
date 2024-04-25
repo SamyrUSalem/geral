@@ -1329,7 +1329,7 @@ About Us Style
 }
 
 .about .video-box {
-  background: url("../images/about.jpg") center center no-repeat;
+  background: url("../images/sobreNos.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
   display: flex;
