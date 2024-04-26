@@ -7,6 +7,11 @@
     .about.services .container .row div {
         margin-bottom: 15px;
     }
+
+    footer {
+        margin-top: 0;
+        padding-top: 200px;
+    }
 }
 
 /* Tablets pequenos e smartphones mais largos (600px até 991px) */
@@ -23,12 +28,27 @@
 
     footer {
         margin-top: 0;
-        padding-top: 350px;
+        padding-top: 160px;
+        text-align: center;
     }
 }
 
 /* Dispositivos médios (tablets no modo paisagem - a partir de 768px) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    footer {
+        margin-top: 0;
+        padding-top: 160px;
+        text-align: center;
+    }
+
+    .footer-widget ul {
+        display: block;
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
     /* Adicionar regras específicas para dispositivos médios se necessário */
 }
 
@@ -75,13 +95,13 @@
         overflow: hidden;
     }
 
-    .about .box-heading h4,
+  /*   .about .box-heading h4,
     .footer-widget h4 {
         font-size: 20px;
         color: #fff;
         font-weight: 700;
         margin-top: 15px;
-    }
+    } */
 }
 
 /* Telas extra largas (laptops, desktops e TVs - a partir de 1200px) */
