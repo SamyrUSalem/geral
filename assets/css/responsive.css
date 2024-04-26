@@ -15,7 +15,7 @@
 
 /* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
 @media only screen and (min-width: 600px) and (max-width: 991px) {
-    
+
     .service-item {
         min-height: 520px;
         padding: 20px;
@@ -29,7 +29,7 @@
     footer {
         margin-top: 0px;
         padding-top: 350px;
-      }
+    }
 }
 
 
@@ -39,6 +39,8 @@
 
 /* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
 @media only screen and (min-width: 1200px) {
+    #test {}
+
     .about:after {
         display: none;
     }
@@ -196,7 +198,7 @@
     }
 }
 
-@media only screen and (min-width: 1513px){
+@media only screen and (min-width: 1513px) {
     .main-banner .right-image img {
         max-width: 500px;
     }
