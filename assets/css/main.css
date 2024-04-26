@@ -413,11 +413,11 @@ header
 .background-header .nav li a.active:after {
   position: absolute;
   width: 100%;
-  height: 1px;
+  height: 1.5px;
   background-color: #4b8ef1;
   content: '';
   left: 50%;
-  bottom: -20px;
+  bottom: 1px;
   transform: translateX(-50%);
 }
 
