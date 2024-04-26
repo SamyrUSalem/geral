@@ -1,6 +1,5 @@
-/* Smartphones (600px para baixo) */
+/* Smartphones (até 600px) */
 @media only screen and (max-width: 600px) {
-
     .services::before {
         display: none;
     }
@@ -8,14 +7,10 @@
     .about.services .container .row div {
         margin-bottom: 15px;
     }
-
 }
 
-
-
-/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
-@media only screen and (min-width: 600px) and (max-width: 991px) {
-
+/* Tablets pequenos e smartphones mais largos (600px até 991px) */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
     .service-item {
         min-height: 520px;
         padding: 20px;
@@ -27,67 +22,38 @@
     }
 
     footer {
-        margin-top: 0px;
+        margin-top: 0;
         padding-top: 350px;
     }
 }
 
-
-/*Dispostivos Médios (Tablets deitados, 768px para cima) */
-@media only screen and (min-width: 768px) {}
-
-
-/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
-@media only screen and (min-width: 1200px) {
-    #test {}
-
-    .about:after {
-        display: none;
-    }
-
-    .about:before {
-        display: none;
-    }
-
-    .main-banner .right-image img {
-        min-width: 500px;
-        margin-left: 100px;
-    }
-
-    .about .video-box {
-        margin-top: 50px;
-        min-height: 500px;
-        border-radius: 20px;
-    }
-
-    .service-item {
-        min-height: 500px;
-        padding: 20px;
-    }
+/* Dispositivos médios (tablets no modo paisagem - a partir de 768px) */
+@media only screen and (min-width: 768px) {
+    /* Adicionar regras específicas para dispositivos médios se necessário */
 }
 
-/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+/* Dispositivos grandes (laptops/desktops - a partir de 992px) */
 @media only screen and (min-width: 992px) {
-    .about:after {
-        display: none;
-    }
-
-    .about:before {
+    .about::after,
+    .about::before {
         display: none;
     }
 
     .main-banner .right-image img {
         border-radius: 60px;
+        width: 100vw;
+        max-width: 390px; /* valor específico para range 992px a 1200px */
+        max-height: 300px;
+        margin-left: 10vh;
+        margin-top: 5vh;
     }
 
     .about .video-box {
         position: relative;
-        /* Adiciona position relative para que o botão seja posicionado em relação a este elemento */
         margin-top: 50px;
         background-size: cover;
         width: 480px;
         height: 450px;
-        /* Ajuste a altura conforme necessário */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -100,110 +66,44 @@
         background: radial-gradient(#4b8ef1 50%, rgba(46, 103, 179, 0.4) 52%);
         border-radius: 50%;
         display: flex;
-        /* Altera para flex para alinhar o conteúdo verticalmente */
         align-items: center;
-        /* Alinha verticalmente */
         justify-content: center;
-        /* Alinha horizontalmente */
         position: absolute;
         top: 50%;
-        /* Alinha verticalmente no meio */
         left: 50%;
-        /* Alinha horizontalmente no meio */
         transform: translate(-50%, -50%);
-        /* Centraliza completamente */
         overflow: hidden;
     }
 
-    .about .box-heading h4 {
-        font-size: 13px;
-        letter-spacing: 1px;
-        font-weight: 700;
-        padding: 8px 20px;
-        margin: 0 0 15px 0;
-        background: #f3f8ec;
-        background-color: #34c4f9;
-        color: white;
-        display: inline-block;
-        text-transform: uppercase;
-        border-radius: 50px;
-        margin-top: 20px;
-    }
-
-    .about .icon-box {
-        margin-top: 50px;
-    }
-
-    .about-us,
-    #text-left {
-        text-align: left;
-    }
-
-    .service-item h4 {
-        transition: all 0.3s;
-        font-size: 20px;
-        font-weight: 700;
-        margin-bottom: 15px;
-        text-align: left;
-    }
-
-    .service-item p {
-        transition: all 0.3s;
-        font-size: 15px;
-        margin-bottom: 20px;
-        text-align: left;
-    }
-
-    .clients .swiper-pagination {
-        margin-top: 20px;
-        margin-bottom: 50px;
-        position: relative;
-    }
-
-    section,
-    .features .nav-tabs {
-        border: 0;
-        margin-top: 40px;
-        margin-bottom: 10px;
-    }
-
-    .testimonials {
-        --background-color: #f4f4f4;
-        margin-bottom: 10px;
-        z-index: 10;
-    }
-
+    .about .box-heading h4,
     .footer-widget h4 {
         font-size: 20px;
         color: #fff;
         font-weight: 700;
         margin-top: 15px;
     }
-
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+/* Telas extra largas (laptops, desktops e TVs - a partir de 1200px) */
+@media only screen and (min-width: 1200px) {
     .main-banner .right-image img {
-        width: 100vw;
-        max-width: 390px;
-        max-height: 300px;
-        margin-left: 10vh;
-        margin-top: 5vh;
+        min-width: 500px;
+        margin-left: 100px;
+        max-width: 500px; /* Valor específico para range 1200px a 1555px */
+    }
+
+    .about .video-box {
+        min-height: 500px;
+        border-radius: 20px;
+    }
+
+    .service-item {
+        min-height: 500px;
+        padding: 20px;
     }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1555px) {
-    .main-banner .right-image img {
-        max-width: 500px;
-    }
+/* Monitores ultrawide (a partir de 3440px) */
+@media screen and (min-width: 3440px) {
+    /* Adicionar regras específicas para monitores ultrawide se necessário */
 }
-
-@media only screen and (min-width: 1513px) {
-    .main-banner .right-image img {
-        max-width: 500px;
-    }
-}
-
-
-/* Estilos para monitores ultrawide de 34 polegadas */
-@media screen and (min-width: 3440px) {}

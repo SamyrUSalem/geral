@@ -750,7 +750,7 @@ header
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
   .header-area .main-nav .nav li:last-child,
   .background-header .main-nav .nav li:last-child {
@@ -1144,7 +1144,7 @@ Banner Style
 
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .main-banner::before {
     display: none;
   }
@@ -2532,7 +2532,7 @@ responsive
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .header-area {
     background-color: #fff;
   }
