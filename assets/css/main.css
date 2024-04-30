@@ -81,7 +81,6 @@ m {
   --heading-color: #32353a;
   --heading-color-rgb: 50, 53, 58;
   --contrast-color: #ffffff;
-  --color-primary: #feb900;
   --color-secondary: #52565e;
   --contrast-color-rgb: 255, 255, 255;
   --font-family-poppins: 'Poppins', sans-serif;
@@ -1051,7 +1050,7 @@ Banner Style
   margin-right: 45px;
 }
 
-.main-banner .item h6{
+.main-banner .item h6 {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
@@ -1059,7 +1058,7 @@ Banner Style
   margin-bottom: 15px;
 }
 
-.main-banner .item h6 span{
+.main-banner .item h6 span {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
@@ -1099,8 +1098,8 @@ Banner Style
   text-align: center;
   line-height: 46px;
   border-radius: 50%;
-  background: rgb(255,104,95);
-  background: linear-gradient(105deg, rgba(255,104,95,1) 0%, rgba(255,144,104,1) 100%);
+  background: rgb(255, 104, 95);
+  background: linear-gradient(105deg, rgba(255, 104, 95, 1) 0%, rgba(255, 144, 104, 1) 100%);
   color: #fff;
   font-size: 20px;
 }
@@ -1118,7 +1117,7 @@ Banner Style
 }
 
 .main-banner .owl-dot:before {
-  counter-increment:dots;
+  counter-increment: dots;
   content: counter(dots);
   font-size: 20px;
   font-weight: 500;
@@ -1148,59 +1147,76 @@ Banner Style
   .main-banner::before {
     display: none;
   }
+
   .main-banner .item {
     margin-right: 0px;
   }
-  .main-banner  {
+
+  .main-banner {
     padding-bottom: 0px;
   }
+
   .about-us .section-heading h2 {
     margin-right: 0px;
   }
+
   .fact-item {
     text-align: center;
   }
+
   .fact-item .icon {
     margin: 0 auto;
   }
+
   .our-portfolio .section-heading h2,
   .pricing-tables .section-heading h2 {
     margin: 0px;
   }
+
   .pricing-tables .item {
     margin-bottom: 30px;
   }
+
   .subscribe .inner-content {
     padding: 60px 30px;
   }
+
   .our-videos ul.nacc {
     margin-bottom: 30px;
   }
+
   .our-videos .naccs .menu div img {
     border-radius: 50px;
   }
+
   .our-videos .menu .thumb .inner-content {
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
   }
+
   .contact-us .section-heading h2 {
     margin-right: 0px;
     text-align: center;
   }
+
   .our-videos ul.nacc li {
     transform: translateX(0px);
     transform: translateY(-50px);
   }
+
   .our-videos .nacc .thumb iframe {
     height: 500px;
   }
+
   form#contact {
     margin-left: 0px;
     margin-top: 60px;
   }
+
   form#contact {
     padding: 45px 30px;
   }
+
   .subscribe-newsletters {
     margin-bottom: 0px;
   }
@@ -1210,37 +1226,47 @@ Banner Style
   .main-banner .item .down-buttons {
     display: inline-block;
   }
+
   .main-banner .item .down-buttons .main-blue-button {
     margin-right: 0px;
     margin-bottom: 15px;
   }
+
   .main-banner .item .down-buttons .call-button a {
     margin-left: 0px;
   }
+
   .subscribe .inner-content:after {
     z-index: -1;
   }
+
   .subscribe .inner-content {
     padding: 60px 30px 100px 30px;
   }
+
   .subscribe .inner-content form input {
     width: 49%;
   }
+
   .subscribe .inner-content form button {
     width: 100%;
     background-color: #ff695f;
     margin-top: 30px;
   }
+
   .our-videos ul.nacc li {
     transform: translateX(0px);
     transform: translateY(-50px);
   }
+
   .contact-left-dec {
     display: none;
   }
+
   .contact-us .info {
     display: inline-block;
   }
+
   .contact-us .info span {
     margin-bottom: 20px;
   }
