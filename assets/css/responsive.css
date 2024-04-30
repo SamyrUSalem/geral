@@ -207,7 +207,6 @@
         min-width: 500px;
         margin-left: 100px;
         max-width: 500px;
-        /* Valor específico para range 1200px a 1555px */
     }
 
     .about .video-box {
@@ -240,6 +239,9 @@
         margin-left: 150px;
     }
 
+    footer {
+        padding-top: 230px;
+    }
 }
 
 /* Monitores ultrawide (a partir de 3440px) */
