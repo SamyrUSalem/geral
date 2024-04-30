@@ -1,10 +1,9 @@
-
 @media only screen and (max-width: 297px) {
     .service-item .icon {
         float: none;
         margin-bottom: 15px;
         padding-bottom: 60px;
-      }
+    }
 
 }
 
@@ -58,12 +57,14 @@
         text-align: center;
         margin: 0 auto;
         margin-bottom: 20px;
-      }
+    }
+
     /* Adicionar regras específicas para dispositivos médios se necessário */
 }
 
 /* Dispositivos grandes (laptops/desktops - a partir de 992px) */
 @media only screen and (min-width: 992px) {
+
     .about::after,
     .about::before {
         display: none;
@@ -72,7 +73,8 @@
     .main-banner .right-image img {
         border-radius: 60px;
         width: 100vw;
-        max-width: 390px; /* valor específico para range 992px a 1200px */
+        max-width: 390px;
+        /* valor específico para range 992px a 1200px */
         max-height: 300px;
         margin-left: 10vh;
         margin-top: 5vh;
@@ -105,7 +107,7 @@
         overflow: hidden;
     }
 
-  /*   .about .box-heading h4,
+    /*   .about .box-heading h4,
     .footer-widget h4 {
         font-size: 20px;
         color: #fff;
@@ -119,7 +121,8 @@
     .main-banner .right-image img {
         min-width: 500px;
         margin-left: 100px;
-        max-width: 500px; /* Valor específico para range 1200px a 1555px */
+        max-width: 500px;
+        /* Valor específico para range 1200px a 1555px */
     }
 
     .about .video-box {
@@ -130,6 +133,18 @@
     .service-item {
         min-height: 500px;
         padding: 20px;
+    }
+
+    #test {
+        padding-top: 145px;
+    }
+
+    #faqTest {
+        padding-top: 100px;
+    }
+
+    #contactTest {
+        padding-top: 150px;
     }
 }
 
