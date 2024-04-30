@@ -87,13 +87,24 @@
   });
 
 
-  // Menu Dropdown Toggle
-  if ($('.menu-trigger').length) {
-    $(".menu-trigger").on('click', function () {
-      $(this).toggleClass('active');
-      $('.header-area .nav').slideToggle(200);
+  // Menu Dropdown Toggle - codigo de nav-bar mobile - ele vai desaparecer quando rolar para baixo
+  $(document).ready(function() {
+    $(window).scroll(function() {
+        var width = $(window).width();
+        if (width < 991) {
+            // Verifica se o menu está visível
+            if ($('.header-area .nav').is(':visible')) {
+                $('.menu-trigger').removeClass('active');
+                $('.header-area .nav').slideUp(200);
+            }
+        }
     });
-  }
+
+    $(".menu-trigger").on('click', function() {
+        $(this).toggleClass('active');
+        $('.header-area .nav').slideToggle(200);
+    });
+});
 
 
   // Menu elevator animation
