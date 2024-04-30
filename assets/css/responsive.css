@@ -21,10 +21,19 @@
         margin-top: 0;
         padding-top: 200px;
     }
+
+    .project-details .portfolio-details-slider img {
+        width: 100%;
+    }
+
+    .project-details .swiper-button-prev,
+    .project-details .swiper-button-next {
+        display: none;
+    }
 }
 
 /* Tablets pequenos e smartphones mais largos (600px até 991px) */
-@media only screen and (min-width: 600px) and (max-width: 992px) {
+@media only screen and (min-width: 600px) {
     .service-item {
         min-height: 520px;
         padding: 20px;
@@ -60,6 +69,15 @@
 
     #contactTest {
         padding-top: 70px;
+    }
+
+    .project-details .portfolio-details-slider img {
+        width: 100%;
+    }
+
+    .project-details .swiper-button-prev,
+    .project-details .swiper-button-next {
+        display: none;
     }
 }
 
@@ -101,7 +119,9 @@
         padding-top: 70px;
     }
 
-    /* Adicionar regras específicas para dispositivos médios se necessário */
+    .project-details .portfolio-details-slider img {
+        width: 100%;
+    }
 }
 
 /* Dispositivos grandes (laptops/desktops - a partir de 992px) */
@@ -168,6 +188,17 @@
     #contactTest {
         padding-top: 70px;
     }
+
+    .project-details .portfolio-details-slider img {
+        width: 80%;
+    }
+
+    .project-details .swiper-button-prev,
+    .project-details .swiper-button-next {
+        display: block;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
 }
 
 /* Telas extra largas (laptops, desktops e TVs - a partir de 1200px) */
@@ -198,6 +229,17 @@
     #contactTest {
         padding-top: 100px;
     }
+
+    .project-details .portfolio-details-slider img {
+        width: 65%;
+    }
+
+    .project-details .swiper-button-prev,
+    .project-details .swiper-button-next {
+        margin-right: 150px;
+        margin-left: 150px;
+    }
+
 }
 
 /* Monitores ultrawide (a partir de 3440px) */
