@@ -22,6 +22,31 @@
     height: 3px;
 }
 
+.social {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social a {
+    font-size: 18px;
+    display: inline-block;
+    color: #687683;
+    line-height: 1;
+    margin: 0 8px;
+    transition: background-color 0.2s, color 0.1s;
+    /* Reduzindo a duração da transição para 0.2s */
+    padding: 14px;
+    border-radius: 50px;
+    border: 1px solid #dde1e4;
+}
+
+.social a:hover {
+    background-color: #4b8ef1;
+    color: #fff;
+}
+
+
 a,
 a:hover {
     text-decoration: none !important;
@@ -45,10 +70,6 @@ a:hover {
     overflow: hidden;
     position: relative;
     color: #ffffff;
-}
-
-.postcard.dark {
-    background-color: #18151f;
 }
 
 .postcard.light {
@@ -221,10 +242,6 @@ a:hover {
         top: -20%;
         height: 130%;
         width: 55px;
-    }
-
-    .postcard.dark .postcard__text:before {
-        background: #18151f;
     }
 
     .postcard.light .postcard__text:before {
