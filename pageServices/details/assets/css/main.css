@@ -48,6 +48,7 @@ section {
 --------------------------------------------------------------*/
 .project-details .portfolio-details-slider img {
   width: 50%;
+  border-radius: 50px;
 }
 
 .project-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
@@ -215,6 +216,26 @@ section {
   font-style: italic;
   margin: 0 0 15px 0 0 0;
   padding: 0;
+}
+
+.service-list {
+  list-style-type: none;
+  padding: 0;
+}
+.service-list li {
+  font-size: 14px;
+   line-height: 30px;
+   font-weight: 400;
+   color: rgb(102, 102, 102);
+   font-family: var(--font-family-poppins);
+}
+.service-list li:before {
+  content: "\2022";
+  color: #0056b3;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
 }
 
 /*--------------------------------------------------------------
