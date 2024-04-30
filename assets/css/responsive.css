@@ -40,6 +40,27 @@
         padding-top: 160px;
         text-align: center;
     }
+
+
+    #test {
+        padding-top: 150px;
+    }
+
+    #servicesTest {
+        padding-top: 70px;
+    }
+
+    #featureTest {
+        padding-top: 70px;
+    }
+
+    #faqTest {
+        padding-top: 90px;
+    }
+
+    #contactTest {
+        padding-top: 70px;
+    }
 }
 
 /* Dispositivos médios (tablets no modo paisagem - a partir de 768px) */
@@ -57,6 +78,27 @@
         text-align: center;
         margin: 0 auto;
         margin-bottom: 20px;
+    }
+
+
+    #test {
+        padding-top: 150px;
+    }
+
+    #servicesTest {
+        padding-top: 70px;
+    }
+
+    #featureTest {
+        padding-top: 70px;
+    }
+
+    #faqTest {
+        padding-top: 90px;
+    }
+
+    #contactTest {
+        padding-top: 70px;
     }
 
     /* Adicionar regras específicas para dispositivos médios se necessário */
@@ -107,13 +149,25 @@
         overflow: hidden;
     }
 
-    /*   .about .box-heading h4,
-    .footer-widget h4 {
-        font-size: 20px;
-        color: #fff;
-        font-weight: 700;
-        margin-top: 15px;
-    } */
+    #test {
+        padding-top: 70px;
+    }
+
+    #servicesTest {
+        padding-top: 70px;
+    }
+
+    #featureTest {
+        padding-top: 70px;
+    }
+
+    #faqTest {
+        padding-top: 90px;
+    }
+
+    #contactTest {
+        padding-top: 70px;
+    }
 }
 
 /* Telas extra largas (laptops, desktops e TVs - a partir de 1200px) */
@@ -135,16 +189,14 @@
         padding: 20px;
     }
 
-    #test {
-        padding-top: 145px;
-    }
+    #test {}
 
     #faqTest {
         padding-top: 100px;
     }
 
     #contactTest {
-        padding-top: 150px;
+        padding-top: 100px;
     }
 }
 
