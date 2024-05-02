@@ -242,6 +242,13 @@
     footer {
         padding-top: 230px;
     }
+
+    .footer-widget ul {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
 
 /* Monitores ultrawide (a partir de 3440px) */
