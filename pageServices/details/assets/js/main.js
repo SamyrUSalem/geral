@@ -38,6 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  $(window).on('load', function () {
+
+    $('#js-preloader').addClass('loaded');
+
+  });
+
   /**
    * Init swiper slider with 2 slides at once in desktop view
    */
