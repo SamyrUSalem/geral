@@ -199,6 +199,7 @@
         margin-right: 30px;
         margin-left: 30px;
     }
+
     .footer-widget ul {
         display: inline-block;
         width: 100%;
@@ -238,7 +239,7 @@
     }
 
     .project-details .portfolio-details-slider img {
-        width: 65%;
+        width: 60%;
     }
 
     .project-details .swiper-button-prev,
