@@ -76,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
     $(window).scroll(function () {
       var width = $(window).width();
       if (width < 991) {
-        // Verifica se o menu está visível
         if ($('.header-area .nav').is(':visible')) {
           $('.menu-trigger').removeClass('active');
           $('.header-area .nav').slideUp(200);
