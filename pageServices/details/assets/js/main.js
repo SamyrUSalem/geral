@@ -1,20 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    var box = $('.header-text').height();
+    var header = $('header').height();
 
-  $(document).ready(function() {
-    $(window).scroll(function() {
+    if (scroll >= box - header) {
+      $("header").addClass("background-header");
+    } else {
+      $("header").removeClass("background-header");
+    }
+  });
+
+  $(document).ready(function () {
+    $(window).scroll(function () {
       var scroll = $(window).scrollTop();
-      var box = $('.header-text').height();
       var header = $('header').height();
-  
-      if (scroll >= box - header) {
+
+      if (scroll >= header) {
         $("header").addClass("background-header");
       } else {
         $("header").removeClass("background-header");
       }
     });
   });
+
+
+  1
   /**
    * Init swiper slider with 1 slide at once in desktop view
    */
@@ -70,22 +83,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-   $(document).ready(function() {
-    $(window).scroll(function() {
-        var width = $(window).width();
-        if (width < 991) {
-            // Verifica se o menu está visível
-            if ($('.header-area .nav').is(':visible')) {
-                $('.menu-trigger').removeClass('active');
-                $('.header-area .nav').slideUp(200);
-            }
+
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      var width = $(window).width();
+      if (width < 991) {
+        // Verifica se o menu está visível
+        if ($('.header-area .nav').is(':visible')) {
+          $('.menu-trigger').removeClass('active');
+          $('.header-area .nav').slideUp(200);
         }
+      }
     });
 
-    $(".menu-trigger").on('click', function() {
-        $(this).toggleClass('active');
-        $('.header-area .nav').slideToggle(200);
+    $(".menu-trigger").on('click', function () {
+      $(this).toggleClass('active');
+      $('.header-area .nav').slideToggle(200);
     });
-});
+  });
 
 });
