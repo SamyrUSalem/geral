@@ -199,6 +199,14 @@
         margin-right: 30px;
         margin-left: 30px;
     }
+    .footer-widget ul {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
 }
 
 /* Telas extra largas (laptops, desktops e TVs - a partir de 1200px) */

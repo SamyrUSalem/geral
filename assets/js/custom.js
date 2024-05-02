@@ -316,4 +316,4 @@
     selector: '.glightbox'
   });
 
-})()
+})
