@@ -88,23 +88,23 @@
 
 
   // Menu Dropdown Toggle - codigo de nav-bar mobile - ele vai desaparecer quando rolar para baixo
-  $(document).ready(function() {
-    $(window).scroll(function() {
-        var width = $(window).width();
-        if (width < 991) {
-            // Verifica se o menu está visível
-            if ($('.header-area .nav').is(':visible')) {
-                $('.menu-trigger').removeClass('active');
-                $('.header-area .nav').slideUp(200);
-            }
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      var width = $(window).width();
+      if (width < 991) {
+        // Verifica se o menu está visível
+        if ($('.header-area .nav').is(':visible')) {
+          $('.menu-trigger').removeClass('active');
+          $('.header-area .nav').slideUp(200);
         }
+      }
     });
 
-    $(".menu-trigger").on('click', function() {
-        $(this).toggleClass('active');
-        $('.header-area .nav').slideToggle(200);
+    $(".menu-trigger").on('click', function () {
+      $(this).toggleClass('active');
+      $('.header-area .nav').slideToggle(200);
     });
-});
+  });
 
 
   // Menu elevator animation
@@ -317,3 +317,22 @@
   });
 
 })
+
+//Send Email
+const contactForm = document.getElementById("contact-form"),
+  contactName = document.getElementById("name"),
+  contactEmail = document.getElementById("email"),
+  contactSubject = document.getElementById("subject"),
+  contactMessagge = document.getElementById("message");
+
+const sendEmail = (e) => {
+  e.preventDefault()
+  if (contactName.value === "" || contactEmail.value === "" || contactSubject.value === "", contactMessagge.value === "") {
+
+  } else {
+    emailjs.sendForm("service_g7ybqg5", "template_fktsvjs", "#contact-form", "sHXg6zb1ejsxbKq8W")
+  }
+
+}
+
+contactForm.addEventListener("submit", sendEmail)
