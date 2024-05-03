@@ -187,7 +187,6 @@
   });
 
 
-  // Page loading animation
   $(window).on('load', function () {
 
     $('#js-preloader').addClass('loaded');
@@ -333,9 +332,6 @@ const sendEmail = (e) => {
   //verificar se o campo tem um valor
   if (contactName.value === '' || contactEmail.value === '' || contactNumber.value === '' || contactProject.value === '') {
 
-    contactMessage.classList.remove('color-blue')
-    contactMessage.classList.add('color-red')
-
     //Mostrar mensagem pro usuario
     contactMessage.textContent = 'Escreva em todos os campos!! 📩'
   } else {
@@ -344,7 +340,6 @@ const sendEmail = (e) => {
     //servicesID - TemplateID - #form - publicKey
     emailjs.sendForm('service_b3624kj', 'template_18p2728', '#contact-form', 'i9g_qk6NMFOkj8EV9')
       .then(() => {
-        contactMessage.classList.add('color-blue')
         contactMessage.textContent = 'Mensagem Enviada ✅'
         //remover mensagem escrita depois de 5 seg
         setTimeout(() => {
