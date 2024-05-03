@@ -30,6 +30,27 @@
     .project-details .swiper-button-next {
         display: none;
     }
+
+    #test {
+        padding-top: 150px;
+    }
+
+    #servicesTest {
+        padding-top: 70px;
+    }
+
+    #featureTest {
+        padding-top: 70px;
+    }
+
+    #faqTest {
+        padding-top: 90px;
+    }
+
+    #contactTest {
+        padding-top: 70px;
+    }
+
 }
 
 /* Tablets pequenos e smartphones mais largos (600px até 991px) */
