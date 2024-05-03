@@ -338,7 +338,7 @@ const sendEmail = (e) => {
 
     //Uso do EMAIL SERVICES - EMAILJS.COM 
     //servicesID - TemplateID - #form - publicKey
-    emailjs.sendForm('service_b3624kj', 'template_18p2728', '#contact-form', 'i9g_qk6NMFOkj8EV9')
+    emailjs.sendForm('service_g7ybqg5', 'template_fktsvjs', '#contact-form', 'sHXg6zb1ejsxbKq8W')
       .then(() => {
         contactMessage.textContent = 'Mensagem Enviada ✅'
         //remover mensagem escrita depois de 5 seg
