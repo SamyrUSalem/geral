@@ -317,3 +317,49 @@
   });
 
 })
+
+
+/*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById('contact-form'),
+      contactName = document.getElementById('contact-name'),
+      contactEmail = document.getElementById('contact-email'),
+      contactNumber = document.getElementById('contact-number'),
+      contactProject = document.getElementById('contact-project'),
+      contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e) => {
+  e.preventDefault()
+
+  //verificar se o campo tem um valor
+  if(contactName.value === '' || contactEmail.value === '' || contactNumber.value === '' || contactProject.value === ''){
+
+  contactMessage.classList.remove('color-blue')
+  contactMessage.classList.add('color-red')
+
+  //Mostrar mensagem pro usuario
+  contactMessage.textContent = 'Escreva em todos os campos!! 📩'
+}else{
+
+  //Uso do EMAIL SERVICES - EMAILJS.COM 
+  //servicesID - TemplateID - #form - publicKey
+  emailjs.sendForm('service_b3624kj','template_18p2728','#contact-form','i9g_qk6NMFOkj8EV9')
+      .then(() =>{
+        contactMessage.classList.add('color-blue')
+        contactMessage.textContent = 'Mensagem Enviada ✅'
+        //remover mensagem escrita depois de 5 seg
+        setTimeout(() => {
+          contactMessage.textContent = ''
+        }, 5000);
+      },(error) =>{
+        alert('OOPS! Alguma coisa deu errado...', error)
+      })
+      
+      //limpar os campos 
+      contactName.value = ''
+      contactEmail.value = ''
+      contactNumber.value = ''
+      contactProject.value = ''
+  }
+
+}
+contactForm.addEventListener('submit', sendEmail)

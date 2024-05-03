@@ -872,28 +872,33 @@ https://templatemo.com/tm-570-chain-app-dev
         </div>
 
         <div class="col-lg-6">
-          <form action="./forms/contact.php" method="post" role="form" class="php-email-form">
+          <form action="" class="php-email-form contact__form" id="contact-form">
             <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Nome" required>
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-              </div>
+                <div class="col-md-6 form-group contact__form-div">
+                    <label>Name</label>
+                    <input type="text" name="user_name" class="form-control" id="contact-name" required placeholder="Escreva seu nome">
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0 contact__form-div">
+                    <label>Email</label>
+                    <input type="email" class="form-control" name="user_email" id="contact-email" required placeholder="Digite seu Email">
+                </div>
             </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="assunto" id="subject" placeholder="Assunto" required>
+            <div class="form-group mt-3 contact__form-div">
+                <label>Numero</label>
+                <input type="text" class="form-control" name="assunto" id="contact-number" required placeholder="Deixe seu contato">
             </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="mensagem" rows="6" placeholder="Mensagem" required></textarea>
+            <div class="form-group mt-3 contact__form-div">
+                <label>Mensagem</label>
+                <textarea class="form-control" id="contact-project" rows="6" required placeholder="Escreva sua Mensagem"></textarea>
             </div>
-            <div class="my-3">
-              <div class="loading">Carregando...</div>
-              <div class="error-message">Algo Deu Errado...</div>
-              <div class="sent-message">Mensagem Enviada! Obrigado!</div>
-            </div>
-            <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
-          </form>
+
+                <p  class="my-3" id="contact-message"></p>
+                  <div class="text-center">
+                <button type="submit">Enviar Mensagem</button>
+                  </div>
+            
+        </form>
+        
         </div>
 
       </div>
@@ -950,6 +955,7 @@ https://templatemo.com/tm-570-chain-app-dev
 
   <!-- Scripts -->
   <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="assets/js/email.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="./vendor/glightbox/js/glightbox.min.js"></script>
   <script src="vendor/swiper/swiper-bundle.min.js"></script>
@@ -962,8 +968,7 @@ https://templatemo.com/tm-570-chain-app-dev
   <script src="./assets/js/accordion.js"></script>
   <script src="./assets/js/clients-slider.js"></script>
   <script src="./assets/js/testimonial.js"></script>
-
-
+  
 </body>
 
 </html>
